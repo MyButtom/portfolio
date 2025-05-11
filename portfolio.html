@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="portfolio.css" />
+    </head>
+    <body class="home">
+        <div class="container">
+            <div id="sidebar-overlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
+            <aside class="sidebar">
+                <button class="close-btn" onclick="toggleSidebar()">✖</button>
+                <div class="profile">
+                    <div class="profile-pic">
+                        <img src="assets/buzz.webp" alt="Propayl pic" />
+                    </div>
+                    <h1>JOHN IVAN</h1>
+                    <div class="dev">
+                        <span>FULLSTACK DEVELOPER</span>
+                    </div>
+                </div>
+                <div class="languages">
+                    <h3>LANGUAGES</h3>
+                    <ul>
+                        <li>C#</li>
+                        <li>PHP</li>
+                        <li>JAVA</li>
+                        <li>HTML</li>
+                        <li>JAVASCRIPT</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <header class="header">                
+                <span class="hamb_icon" onclick="toggleSidebar()">≡</span>
+
+                <div class="header-options">
+                    <a href="#" data-page="home">HOME</a>
+                    <a href="#" data-page="about">ABOUT</a>
+                    <a href="#" data-page="skillset">SKILLSET</a>
+                    <a href="#" data-page="projects">PROJECTS</a>
+                    <a href="#" data-page="contact">CONTACT</a>
+                </div>
+            </header>
+
+            <main class="main">
+                <section class="page home active">
+                    <div class="title">
+                        HOMEPAGE
+                    </div>
+                    <div class="content">
+                        <h1>Welcome, I am John Ivan</h1>
+                        <p>An aspiring fullstack developer</p>                        
+                    </div>
+                </section>
+
+                <section class="page about">
+                    <div class="title">
+                        ABOUT ME
+                    </div>
+                    <div class="content">
+                        <p>I'm a fullstack developer with a passion for building clean, functional web and software solutions.</p>
+                        <p>I have hands-on experience with HTML, JavaScript, Java, C#, PHP, and Bootstrap.</p>
+                        <p>I enjoy learning new technologies especially about computers.</p>
+                        <p>My recent projects include an Sales and Inventory Management System, and a Scientific Calculator.</p>
+                    </div>
+                </section>
+
+                <section class="page skillset">
+                    <div class="title">
+                        MY SKILLSET
+                    </div>
+                    <div class="content">
+                        <div class="skill">
+                            <div class="skill-name">
+                                <p>C#</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 50%;">
+                                    
+                                </div>
+                            </div>
+                            <div class="skill-percentage">
+                                <p>50%</p>
+
+                            </div>
+                        </div>   
+                        <div class="skill">
+                            <div class="skill-name">
+                                <p>PHP</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%;">
+                                    
+                                </div>
+                            </div>
+                            <div class="skill-percentage">
+                                <p>70%</p>
+
+                            </div>
+                        </div>   
+                        <div class="skill">
+                            <div class="skill-name">
+                                <p>JAVA</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%;">
+                                    
+                                </div>
+                            </div>
+                            <div class="skill-percentage">
+                                <p>60%</p>
+
+                            </div>
+                        </div>   
+                        <div class="skill">
+                            <div class="skill-name">
+                                <p>HTML</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;">
+                                    
+                                </div>
+                            </div>
+                            <div class="skill-percentage">
+                                <p>80%</p>
+
+                            </div>
+                        </div>   
+                        <div class="skill">
+                            <div class="skill-name">
+                                <p>JAVASCRIPT</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%;">
+                                    
+                                </div>
+                            </div>
+                            <div class="skill-percentage">
+                                <p>70%</p>
+
+                            </div>
+                        </div>   
+                    </div>
+                </section>
+
+                <section class="page projects">
+                    <div class="title">
+                        RECENT PROJECTS
+                    </div>
+                    <div class="content projects">
+                        <div class="project">
+                            <img src="assets/project1.png" alt="Project 1">
+                            <p>Sales and Inventory Management System - A system created for a Water Refilling Station.</p>
+                        </div>
+                        <div class="project">
+                            <img src="assets/project2.png" alt="Project 2">
+                            <p>A personal system for admins to showcase their personal collections of rare finds, treasures and collectibles.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="page contact">
+                    <div class="title">
+                        CONTACT ME
+                    </div>
+                    <div class="content">
+                        <p><i class="fa-solid fa-map"></i> Address: Mandaue City, Cebu</p>       
+                        <p><i class="fas fa-phone"></i> Contact Number: 09231234567</p>       
+                        <p><i class="fas fa-envelope"></i> Gmail: iv4nphp@gmail.com</p>       
+                        <p><i class="fab fa-facebook"></i> Facebook: Rando Faceboo</p>       
+                        <p><i class="fab fa-instagram"></i> Instagram: Rando Instagra</p>       
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <span>© 2025 John Ivan. All rights reserved.</span>
+        </footer>
+    </body>
+</html>
+
+<!-- Image Modal -->
+<div class="modal" id="imageModal">
+  <div class="modal-content">
+    <img id="modalImage" src="" alt="Project Preview">
+  </div>
+</div>
+
+<script src="portfolio.js"></script>
